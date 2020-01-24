@@ -1,5 +1,5 @@
 // O(log n)
-
+// examples at the bottom
 function binarySearch(list, toFind) {
   let lowIdx = 0;
   let highIdx = list.length;
