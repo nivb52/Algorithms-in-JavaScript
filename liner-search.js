@@ -1,4 +1,5 @@
-// O(n) 
+// O(n)  -> (worst case)
+// the worst case the search will be on the all arrray 
 function linerSearch(list, toFind) {
     let counter = 0
     let foundItem = null
