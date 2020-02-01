@@ -2,7 +2,7 @@ const { createQueue } = require("./queue");
 
 module.exports = { priorityQueue };
 
-function priorityQueue(params) {
+function priorityQueue() {
   const highPriority = createQueue();
   const lowPriority = createQueue();
   return {
@@ -16,6 +16,9 @@ function priorityQueue(params) {
     dequeue(priority = "high") {
       if (priority === "high") {
         highPriority.dequeue();
+        // on useing: if operation didn't seccuss 
+        // enqueue it again only with setTimeOut
+        // to prevent freezing if there is 1 item
       } else lowPriority.dequeue();
     },
     peek() {
