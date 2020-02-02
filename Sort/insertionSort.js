@@ -16,5 +16,6 @@ function insertionSort(array) {
   return array;
 }
 
-const numbers = [5,11,12, 13,10, 6, 7, 4, 0, 1, 2, 3, 9];
-console.log(insertionSort(numbers));
+// const items = [5,11,12, 13,10, 6, 7, 4, 0, 1, 2, 3, 9];
+const items = [4, 7, 6, 1, 9, 8, 3, 2, 10, 11];
+console.log(insertionSort(items));

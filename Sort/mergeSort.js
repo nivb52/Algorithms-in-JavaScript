@@ -28,5 +28,6 @@ function merge(left, right) {
   return sorted;
 }
 
-const items = [9, 4, 6, 10, 3, 7, 2, 8, 5, 1];
+// const items = [9, 4, 6, 10, 3, 7, 2, 8, 5, 1];
+const items = [4, 7, 6, 1, 9, 8, 3, 2, 10, 11];
 console.log(mergeSort(items));

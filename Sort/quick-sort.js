@@ -17,5 +17,6 @@ function quickSort(array) {
   return [...quickSort(lower), pivot ,...quickSort(greater)];
 }
 
-const items = [4, 7, 6, 1, 9, 8, 3, 4, 15, 6];
+// const items = [4, 7, 6, 1, 9, 8, 3, 4, 15, 6];
+const items = [4, 7, 6, 1, 9, 8, 3, 2, 10, 11];
 console.log(quickSort(items));
