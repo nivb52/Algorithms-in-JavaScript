@@ -16,9 +16,9 @@ function priorityQueue() {
     dequeue(priority = "high") {
       if (priority === "high") {
         highPriority.dequeue();
-        // on useing: if operation didn't seccuss 
+        // Note: if operation didn't seccuss (like ajax call) 
         // enqueue it again only with setTimeOut
-        // to prevent freezing if there is 1 item
+        // to prevent freezing if there is only 1 item
       } else lowPriority.dequeue();
     },
     peek() {
