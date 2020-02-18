@@ -12,7 +12,7 @@ function createQueue() {
     },
 
     dequeue() {
-      queue.pop();
+      return queue.pop();
     },
 
     peek() {
